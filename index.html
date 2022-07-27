@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Javascript quiz</title>
+</head>
+<body>
+    <div class="container">
+        <div id="intro">
+        <button class="btn" id="start-btn">Start button</button>
+        <h2>Welcome to my javascript quiz. Feel free to test your knowledge. Click the start button to begin.</h2>
+        </div>
+
+        <button class="btn" id="restart-btn">Restart</button>
+
+        <div id="hide-quiz">
+            <h1 id="timer">100</h1>            
+            <h1 id="question">Question 1: sbidfbiuasnfuj</h1>
+            <div class="options-all">
+                <button class="btn" id="btn1">Answer option</button>
+                <button class="btn" id="btn2">Answer option</button>
+                <button class="btn" id="btn3">Answer option</button>
+                <button class="btn" id="btn4">Answer option</button>
+            </div>
+
+            <h2 class="answer">Answer</h2>
+        </div>
+
+        <div id="highscore-board">
+        <form id="username" action="./highscore.html">
+            <label for="Uname">Username: </label><br>
+            <input type="text" id="Uname" value="" placeholder="Type here"><br>
+            <input type="submit" id="submitName" value="Submit" onclick="getUsername()">
+        </form>
+        <br>
+        <span id="highscore-btn"><a href="./highscore.html" >Click to view your highscore</a></span>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body {
+    padding: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: teal;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+#high-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.high-li {
+    list-style-type: none;
+}
+
+#name-ul {
+    padding: 50px;
+}
+
+.name-li {
+    list-style-type: none;
+}
+
+#highscore-btn {
+    padding: 30px;
+}
