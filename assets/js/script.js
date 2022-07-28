@@ -1,3 +1,4 @@
+    //  global variables
 var startbtn = document.querySelector("#start-btn");
 var restartbtn = document.querySelector("#restart-btn");
 var btn1 = document.querySelector("#btn1");
@@ -11,7 +12,7 @@ var timerCount;
 var timer;
 
 var score = 0;
-
+    //  hide sections
 document.getElementById("hide-quiz").style.display = "none";
 document.getElementById("restart-btn").style.display = "none";
 document.getElementById("highscore-board").style.display = "none";
@@ -39,19 +40,22 @@ function startTimer(){
     timer = setInterval(function() {
         timerCount--;
         timerElement.textContent = timerCount;
-        if (timerCount < 0){  //  add a return to main menu func
+        if (timerCount < 0){ 
             clearInterval(timer);
             displayScore();
         }
     }, 1000);
 }
 
+    //  true answer
 
 function setTrue(){
     answerText.style.display = "block";
     answerText.textContent = "True";
     answerText.style.color = "#259942";
 }
+
+    // false answers
 
 function setFalse1() {
     answerText.style.display = "block";
@@ -105,7 +109,7 @@ function questionSet2() {
     btn2.textContent = "Numbers";
     btn3.textContent = "Strings";
     btn4.textContent = "All of the above";
-
+    //  remove event listener to prevent listener conflict 
     btn3.removeEventListener("click", correctSet1);  // 3 true
     
     btn1.removeEventListener("click", setFalse1);    // 1 false
@@ -230,7 +234,7 @@ function questionSet5(){
 
     btn3.addEventListener("click", setFalse5);  //  3   false
 }
-
+    //  linked to onclick submit button
 function getUsername(){
     var username = document.querySelector("#Uname").value;
     console.log(username);

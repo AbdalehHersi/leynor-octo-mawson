@@ -21,6 +21,8 @@
 
 ![](./assets/images/Screenshot%202022-07-28%20at%2011-49-06%20Javascript%20quiz.png)
 
+![](./assets/images/Untitled.png)
+
 # challenges
 
 <li>Accessing user objects from a different page</li>
